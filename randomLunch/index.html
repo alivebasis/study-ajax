@@ -5,13 +5,58 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
 <title>오늘의점심</title>
 <style>
+body,button,h1,h2,h3,h4,h5,h6,input,ul,li,ol,p{margin:0;padding:0}
+body,button{font-size:12px;font-family:'Noto Sans KR',Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;letter-spacing:-.05em}
+button,input{border:0;background:transparent}
+fieldset,img{border:0}
+ol,ul{list-style:none}
+address,em{font-style:normal}
+a{text-decoration:none}
+.blind{position:absolute;overflow:hidden;clip:rect(0 0 0 0);margin:-1px;width:1px;height:1px}
+
+.wrap{padding:30px 20px}
+.tit_area{padding:0 0 30px}
+.tit em{font-size:13px;font-weight:400}
+.place_wrap{position:relative}
+.place_lst{position:absolute;top:0;left:0;width:390px}
+.place_lst .place_itm{position:relative;padding-right:20px;padding-left:110px;height:100px;background:#131313;font-size:0}
+.place_lst .place_itm:after{display:inline-block;height:100%;vertical-align:middle;content:''}
+.place_lst .place_itm:first-child{padding-left:190px;height:180px}
+.place_lst .place_itm:first-child .thumb:after{z-index:10;position:absolute;top:0;left:0;padding:0 8px;font-size:14px;color:#fff;line-height:25px;background:red;content:'1'}
+.place_lst .place_itm:first-child .thumb{width:160px;height:160px}
+.place_lst .place_itm:first-child .dsc .name{font-size:24px;line-height:28px}
+.place_lst .place_itm+.place_itm{margin-top:10px}
+.place_lst .thumb{position:absolute;top:10px;left:10px;width:80px;height:80px;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;vertical-align:middle}
+.place_lst .thumb:before{position:absolute;top:0;right:0;bottom:0;left:0;border:1px solid rgba(0,0,0,.5);content:''}
+.place_lst .dsc{display:inline-block;max-width:100%;vertical-align:middle}
+.place_lst .dsc .name{font-size:20px;font-weight:500;color:#efff00;line-height:22px}
+.place_lst .dsc .addr{margin-top:8px;font-size:14px;color:#fff;line-height:18px}
+.map_area{margin-left:400px}
+.map_area .map{width:100%;height:400px}
+.btn_refresh{padding:5px 10px;background:#0043ff;font-size:16px;color:#fff;cursor:pointer}
 </style>
 </head>
 <body>
-<div class="lst"></div>
-<div id="map" style="width:500px;height:400px;"></div>
+<div class="wrap">
+	<div class="container">
+		<div class="tit_area">
+			<h1 class="tit">오늘의점심 <em>v1.0</em></h1>
+			<button type="button" class="btn_refresh" onclick="window.location.reload()">셋다별로면 클릭</button>
+		</div>
+		<div class="place_wrap">
+			<div class="place_lst"></div>
+			<div class="map_area">
+				<div id="map" class="map"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="place_itm"></div>
+	
+</div>
 
 <!-- [D] JS -->
 <script type="text/javascript" src="js/lib/jquery.min.js"></script>
@@ -84,7 +129,7 @@
 	}
 
 	$.get('js/data/place.json', function(data){
-		bind(data, 'lst', '.lst');
+		bind(data, 'place_itm', '.place_lst');
 
 		// var markers = $(data).map(function(i, position) {
 		// 	console.log(data[3].xpos)
