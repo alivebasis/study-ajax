@@ -1,0 +1,102 @@
+[
+	{
+		"userName" : "이재근",
+		"articleNum" : 10,
+		"articleTitle" : "웨이크보드 - 천안에서 즐기는 수상스포츠",
+		"articleImgUrl" : "https://i1.daumcdn.net/thumb/C120x120/?fname=http://t1.daumcdn.net/brunch/service/user/3kT/image/LYPiWYh81aT5LYx1JCp5NfZxJXI.JPG",
+		"articleSummary" : "iOS 12, 방해는 줄이고 Screen Time은 관리하는 새로운 기능 소개 Screen Time은 사용자가 각각의 앱을 사용하는데 소요하는 총 시간, 앱 카테고리별 사용량, 수신 알림 개수 및 iOS 사용 빈도 등을 보여주는 상세한 일일 및 주간 활동 리포트이다.  Apple은 고객들이 자신의 iOS 기기 사용 시간을 파악하고 이를 관리할 수 있도록 돕",
+		"writeTime" : 1541503633000,
+		"shareCount" : 15,
+		"commentCount" : 30
+	},
+	{
+		"userName" : "위키트리",
+		"articleNum" : 9,
+		"articleTitle" : "스포츠 의학, 어깨통증, 그리고 운동방법 - 작가의 변",
+		"articleImgUrl" : "https://i1.daumcdn.net/thumb/C120x120/?fname=http://t1.daumcdn.net/brunch/service/user/6BGY/image/tUt2WnKcIEVRtucww9UnoFGyfjU.jpg",
+		"articleSummary" : "저는 어깨와 팔꿈치를 전문으로 하는 정형외과 전문의이자 스포츠 닥터입니다. 제 글에 대한 믿음과 신뢰를 주기 위해서 부끄럽지만 본인 소개를 짧게나마 해보면.. 국내에서 프로 선수들, 국가대표 선수들과 엘리트 선수들에게",
+		"writeTime" : 1541494378000,
+		"shareCount" : 15,
+		"commentCount" : 30
+	},
+	{
+		"userName" : "케이머그",
+		"articleNum" : 8,
+		"articleTitle" : "블루투스 인증 통과한 애플 에어팟 2세대",
+		"articleImgUrl" : "http://t1.daumcdn.net/brunch/service/user/wjx/image/WiV8U_wnJ7jge4B0HNQOMPfxJdI.jpg",
+		"articleSummary" : "그동안 공개되지 않았던 애플 에어팟 새 모델이 블루투스 인증을 받았다.  지난 1일 미국 블루투스 규제 그룹 데이터베이스(SIG)에는 애플 \u0027에어팟\u0027 새 모델에 관한 정보가 게재됐다. 해당 정보에는 \u0027에어팟\u0027이라는 제품 이름과 함께 새로운 모델 번호인 A2031·A2032가 포함됐다.    이번에 공개된 정보에서 새로운 모델 번호가 2개인 이유는 이어폰",
+		"writeTime" : 1541479390000,
+		"shareCount" : 15,
+		"commentCount" : 30
+	},
+	{
+		"userName" : "케이머그",
+		"articleNum" : 7,
+		"articleTitle" : "iOS 12, 스크린 타임 새로운 기능 소개",
+		"articleImgUrl" : "http://t1.daumcdn.net/brunch/service/user/wjx/image/WiV8U_wnJ7jge4B0HNQOMPfxJdI.jpg",
+		"articleSummary" : "iOS 12, 방해는 줄이고 Screen Time은 관리하는 새로운 기능 소개 Screen Time은 사용자가 각각의 앱을 사용하는데 소요하는 총 시간, 앱 카테고리별 사용량, 수신 알림 개수 및 iOS 사용 빈도 등을 보여주는 상세한 일일 및 주간 활동 리포트이다.  Apple은 고객들이 자신의 iOS 기기 사용 시간을 파악하고 이를 관리할 수 있도록 돕",
+		"writeTime" : 1541503633000,
+		"shareCount" : 15,
+		"commentCount" : 30
+	},
+	{
+		"userName" : "위키트리",
+		"articleNum" : 6,
+		"articleTitle" : "애플, 2018년 4/4분기 실적 결과 발표",
+		"articleImgUrl" : "http://t1.daumcdn.net/brunch/service/user/wjx/image/HvWeZANggxXush8GaN0ZgTQt_Y4.png",
+		"articleSummary" : "Apple, 2018년 4/4분기 실적 결과 발표  Apple에서 2018년 4/4분기의 (2018년 7~9월) 실적 결과를 발표했습니다. 4/4분기의 매출액은 629억 달러로 전년 같은 분기 대비 20% 증가했고, 순이익은 141억 달러로 전년 대비 32% 증가했습니다. 그리고, 희석 주당 이익은 전년 대비 41% 증가한 2.91달러이며, 참고로 전년 같",
+		"writeTime" : 1541494378000,
+		"shareCount" : 15,
+		"commentCount" : 30
+	},
+	{
+		"userName" : "케이머그",
+		"articleNum" : 5,
+		"articleTitle" : "블루투스 인증 통과한 애플 에어팟 2세대",
+		"articleImgUrl" : "http://t1.daumcdn.net/brunch/service/user/wjx/image/WiV8U_wnJ7jge4B0HNQOMPfxJdI.jpg",
+		"articleSummary" : "그동안 공개되지 않았던 애플 에어팟 새 모델이 블루투스 인증을 받았다.  지난 1일 미국 블루투스 규제 그룹 데이터베이스(SIG)에는 애플 \u0027에어팟\u0027 새 모델에 관한 정보가 게재됐다. 해당 정보에는 \u0027에어팟\u0027이라는 제품 이름과 함께 새로운 모델 번호인 A2031·A2032가 포함됐다.    이번에 공개된 정보에서 새로운 모델 번호가 2개인 이유는 이어폰",
+		"writeTime" : 1541479390000,
+		"shareCount" : 15,
+		"commentCount" : 30
+	},
+	{
+		"userName" : "케이머그",
+		"articleNum" : 4,
+		"articleTitle" : "iOS 12, 스크린 타임 새로운 기능 소개",
+		"articleImgUrl" : "http://t1.daumcdn.net/brunch/service/user/wjx/image/WiV8U_wnJ7jge4B0HNQOMPfxJdI.jpg",
+		"articleSummary" : "iOS 12, 방해는 줄이고 Screen Time은 관리하는 새로운 기능 소개 Screen Time은 사용자가 각각의 앱을 사용하는데 소요하는 총 시간, 앱 카테고리별 사용량, 수신 알림 개수 및 iOS 사용 빈도 등을 보여주는 상세한 일일 및 주간 활동 리포트이다.  Apple은 고객들이 자신의 iOS 기기 사용 시간을 파악하고 이를 관리할 수 있도록 돕",
+		"writeTime" : 1541503633000,
+		"shareCount" : 15,
+		"commentCount" : 30
+	},
+	{
+		"userName" : "위키트리",
+		"articleNum" : 3,
+		"articleTitle" : "애플, 2018년 4/4분기 실적 결과 발표",
+		"articleImgUrl" : "http://t1.daumcdn.net/brunch/service/user/wjx/image/HvWeZANggxXush8GaN0ZgTQt_Y4.png",
+		"articleSummary" : "Apple, 2018년 4/4분기 실적 결과 발표  Apple에서 2018년 4/4분기의 (2018년 7~9월) 실적 결과를 발표했습니다. 4/4분기의 매출액은 629억 달러로 전년 같은 분기 대비 20% 증가했고, 순이익은 141억 달러로 전년 대비 32% 증가했습니다. 그리고, 희석 주당 이익은 전년 대비 41% 증가한 2.91달러이며, 참고로 전년 같",
+		"writeTime" : 1541494378000,
+		"shareCount" : 15,
+		"commentCount" : 30
+	},
+	{
+		"userName" : "케이머그",
+		"articleNum" : 2,
+		"articleTitle" : "블루투스 인증 통과한 애플 에어팟 2세대",
+		"articleImgUrl" : "http://t1.daumcdn.net/brunch/service/user/wjx/image/WiV8U_wnJ7jge4B0HNQOMPfxJdI.jpg",
+		"articleSummary" : "그동안 공개되지 않았던 애플 에어팟 새 모델이 블루투스 인증을 받았다.  지난 1일 미국 블루투스 규제 그룹 데이터베이스(SIG)에는 애플 \u0027에어팟\u0027 새 모델에 관한 정보가 게재됐다. 해당 정보에는 \u0027에어팟\u0027이라는 제품 이름과 함께 새로운 모델 번호인 A2031·A2032가 포함됐다.    이번에 공개된 정보에서 새로운 모델 번호가 2개인 이유는 이어폰",
+		"writeTime" : 1541479390000,
+		"shareCount" : 15,
+		"commentCount" : 30
+	},
+	{
+		"userName" : "케이머그",
+		"articleNum" : 1,
+		"articleTitle" : "iOS 12, 스크린 타임 새로운 기능 소개",
+		"articleImgUrl" : "http://t1.daumcdn.net/brunch/service/user/wjx/image/WiV8U_wnJ7jge4B0HNQOMPfxJdI.jpg",
+		"articleSummary" : "iOS 12, 방해는 줄이고 Screen Time은 관리하는 새로운 기능 소개 Screen Time은 사용자가 각각의 앱을 사용하는데 소요하는 총 시간, 앱 카테고리별 사용량, 수신 알림 개수 및 iOS 사용 빈도 등을 보여주는 상세한 일일 및 주간 활동 리포트이다.  Apple은 고객들이 자신의 iOS 기기 사용 시간을 파악하고 이를 관리할 수 있도록 돕",
+		"writeTime" : 1541503633000,
+		"shareCount" : 15,
+		"commentCount" : 30
+	}
+]

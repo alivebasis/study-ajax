@@ -1,0 +1,96 @@
+<!Doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>Tab Contents</title>
+<style>
+body,button,h1,h2,h3,h4,h5,h6,input,ul,li,ol,p{margin:0;padding:0}
+body{font-size:10px;padding:20px}
+button,input{border:0;background:transparent}
+fieldset,img{border:0}
+ol,ul{list-style:none}
+address,em{font-style:normal}
+a{text-decoration:none}
+.blind{position:absolute;overflow:hidden;clip:rect(0 0 0 0);margin:-1px;width:1px;height:1px}
+
+.wrap{max-width:600px;margin:0 auto}
+.tab_area{padding:20px 0}
+.tab_lst li{display:inline-block;vertical-align:top}
+.tab_lst a{display:block;padding:4px 10px;margin:0 8px 0 0;border:1px solid #333;border-radius:14px;font-size:14px;color:#333}
+.article_lst{margin-top:20px}
+.article_itm{position:relative;padding:10px 20px 0 130px;margin-bottom:10px;min-height:130px;border:1px solid #333;box-sizing:border-box}
+.article_itm .thumb{position:absolute;top:10px;left:10px;width:110px;height:110px}
+.article_itm .thumb img{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%}
+.article_itm .tit{overflow:hidden;display:block;font-size:14px;white-space:nowrap;text-overflow:ellipsis}
+.article_itm .dsc{overflow:hidden;margin:10px 0;font-size:12px;line-height:18px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}
+.article_itm .name{}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+    <h1> TAB CONTENTS</h1>
+    <div class="tab_area">
+        <ul class="tab_lst">
+        <li><a href="#" class="on">IT</a></li>
+        <li><a href="#">SPORTS</a></li>
+        <li><a href="#">TEST</a></li>
+        </ul>
+        <div class="article_lst"></div>
+    </div>
+</div>
+
+<script>
+    function makeTemplate(data, clickedName) {
+        var html = document.getElementById("tabcontent").innerHTML;
+        var resultHTML = "";
+
+        for (var i = 0; i < data.length; i++) {
+            resultHTML += html.replace("{articleImgUrl}", data[i].articleImgUrl)
+                .replace("{articleSummary}", data[i].articleSummary)
+                .replace("{userName}", data[i].userName)
+                .replace("{articleTitle}", data[i].articleTitle);
+        }
+        document.querySelector(".article_lst").innerHTML = resultHTML;
+    }
+    function sendAjax(clickedName) {
+        var url = "./" + clickedName + ".json",
+            request = new XMLHttpRequest();
+
+        request.onreadystatechange = function () {
+            console.log(request.readyState + " / " + request.status);
+            if (request.readyState === 4 && request.status === 200) {
+                var data = JSON.parse(request.responseText);
+                makeTemplate(data, clickedName);
+            } else if (request.status == 404) {
+                document.querySelector(".article_lst").innerHTML = '목록이 없습니다.';
+            }
+        }
+        request.open("GET", url);
+        request.send();
+    }
+    var tabmenu = document.querySelector(".tab_lst");
+    var tabCategory = "it";
+    tabmenu.addEventListener("click", function (evt) {
+        var tabCategory = evt.target.innerText;
+        sendAjax(tabCategory);
+    });
+    sendAjax(tabCategory);
+    //참고 https://developer.mozilla.org/ko/docs/Web/Guide/AJAX/Getting_Started
+</script>
+
+<script id="tabcontent" type="text/x-my-template">
+    <div class="article_itm">
+        <div class="thumb">
+            <img src="{articleImgUrl}" alt="">
+        </div>
+        <strong class="tit">{articleTitle}</strong>
+        <p class="dsc">{articleSummary}</p>
+        <div class="name">{userName}</div>
+    </div>
+</script>
+</body>
+</html>
